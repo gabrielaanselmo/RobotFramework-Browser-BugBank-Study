@@ -1,0 +1,110 @@
+{"level":30,"time":"2025-11-02T16:32:13.329Z","pid":25232,"hostname":"Gabriela","msg":"Listening on 127.0.0.1:56763"}
+{"level":30,"time":"2025-11-02T16:32:13.773Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-11-02T16:32:13.847Z","pid":25232,"hostname":"Gabriela","msg":"Adding browser to stack: chromium, version: 141.0.7390.37"}
+{"level":30,"time":"2025-11-02T16:32:13.848Z","pid":25232,"hostname":"Gabriela","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-11-02T16:32:13.848Z","pid":25232,"hostname":"Gabriela","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-11-02T16:32:13.855Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-11-02T16:32:13.856Z","pid":25232,"hostname":"Gabriela","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@dadcc225580efb905ae697b8f82bd162\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=0b9f4fc9-fb49-46ec-90b4-aca946b419da\"}"}
+{"level":30,"time":"2025-11-02T16:32:13.866Z","pid":25232,"hostname":"Gabriela","msg":"Setting default timeout for context context=508b793a-acba-44b4-9c7e-356730080b63 to 10000"}
+{"level":30,"time":"2025-11-02T16:32:13.867Z","pid":25232,"hostname":"Gabriela","msg":"Changed active context: context=508b793a-acba-44b4-9c7e-356730080b63"}
+{"level":30,"time":"2025-11-02T16:32:13.951Z","pid":25232,"hostname":"Gabriela","msg":"Video path: undefined"}
+{"level":30,"time":"2025-11-02T16:32:13.952Z","pid":25232,"hostname":"Gabriela","msg":"Changed active page"}
+{"level":30,"time":"2025-11-02T16:32:14.993Z","pid":25232,"hostname":"Gabriela","msg":"End of node method newPage"}
+{"level":30,"time":"2025-11-02T16:32:14.999Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:14.999Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=#__next > div > div.pages__FormBackground-sc-1ee1f2s-2.jNpkvU > div > div.card__login > form > div.login__buttons > button.style__ContainerButton-sc-1wsixal-0.ihdmxA.button__child in page."}
+{"level":30,"time":"2025-11-02T16:32:15.062Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:15.067Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:15.068Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=(//input[@placeholder='Informe seu e-mail'])[2] in page."}
+{"level":30,"time":"2025-11-02T16:32:15.073Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:15.083Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.083Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=(//input[@placeholder='Informe seu e-mail'])[2] in page."}
+{"level":30,"time":"2025-11-02T16:32:15.093Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.097Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.097Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[placeholder='Informe seu Nome'] in page."}
+{"level":30,"time":"2025-11-02T16:32:15.106Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.109Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.109Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=(//input[@placeholder='Informe sua senha'])[2] in page."}
+{"level":30,"time":"2025-11-02T16:32:15.115Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.118Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.118Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=(//input[@placeholder='Informe a confirmação da senha'])[1] in page."}
+{"level":30,"time":"2025-11-02T16:32:15.124Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:15.128Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:15.128Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=toggleAddBalance in page."}
+{"level":30,"time":"2025-11-02T16:32:16.574Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:16.577Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:16.577Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=(//button[normalize-space()='Cadastrar'])[1] in page."}
+{"level":30,"time":"2025-11-02T16:32:16.628Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:16.632Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:16.633Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":30,"time":"2025-11-02T16:32:16.636Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:16.639Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getText"}
+{"level":30,"time":"2025-11-02T16:32:16.639Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":30,"time":"2025-11-02T16:32:16.660Z","pid":25232,"hostname":"Gabriela","msg":"Retrieved text for element id=modalText containing A conta 561-7 foi criada com sucesso"}
+{"level":30,"time":"2025-11-02T16:32:16.660Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getText"}
+{"level":30,"time":"2025-11-02T16:32:16.666Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:16.666Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='Fechar'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.595Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.598Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.599Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=form[class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr'] input[placeholder='Informe seu e-mail'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.605Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.607Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.607Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=form[class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr'] input[name='password'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.610Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.614Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.614Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=form[class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr'] input[name='password'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.620Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.624Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.624Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=button[class='style__ContainerButton-sc-1wsixal-0 otUnI button__child'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.668Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.671Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.671Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=btn-TRANSFERÊNCIA in page."}
+{"level":30,"time":"2025-11-02T16:32:17.772Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.780Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.780Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=btn-TRANSFERÊNCIA in page."}
+{"level":30,"time":"2025-11-02T16:32:17.820Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.823Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.823Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[name='accountNumber'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.903Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.907Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.907Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[name='accountNumber'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.912Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.916Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.916Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[name='digit'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.921Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.924Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.924Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[name='transferValue'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.930Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.933Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.933Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with css=input[name='description'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.939Z","pid":25232,"hostname":"Gabriela","msg":"End of node method fillText"}
+{"level":30,"time":"2025-11-02T16:32:17.941Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.941Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=//button[@type='submit'] in page."}
+{"level":30,"time":"2025-11-02T16:32:17.973Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.977Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.977Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":30,"time":"2025-11-02T16:32:17.979Z","pid":25232,"hostname":"Gabriela","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-11-02T16:32:17.981Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getText"}
+{"level":30,"time":"2025-11-02T16:32:17.981Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":30,"time":"2025-11-02T16:32:17.990Z","pid":25232,"hostname":"Gabriela","msg":"Retrieved text for element id=modalText containing Conta inválida ou inexistente"}
+{"level":30,"time":"2025-11-02T16:32:17.990Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getText"}
+{"level":30,"time":"2025-11-02T16:32:17.994Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method click"}
+{"level":30,"time":"2025-11-02T16:32:17.994Z","pid":25232,"hostname":"Gabriela","msg":"Strict mode is enabled, find Locator with xpath=//a[text()='Fechar'] in page."}
+{"level":30,"time":"2025-11-02T16:32:18.888Z","pid":25232,"hostname":"Gabriela","msg":"End of node method click"}
+{"level":30,"time":"2025-11-02T16:32:18.896Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.898Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.901Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.903Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.904Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.905Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.907Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.908Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.910Z","pid":25232,"hostname":"Gabriela","msg":"Changed active context: context=508b793a-acba-44b4-9c7e-356730080b63"}
+{"level":30,"time":"2025-11-02T16:32:18.911Z","pid":25232,"hostname":"Gabriela","msg":"Changing current active page: page=349d6843-1313-49c3-b3f6-644a58c73fda"}
+{"level":30,"time":"2025-11-02T16:32:18.911Z","pid":25232,"hostname":"Gabriela","msg":"Changed active page"}
+{"level":30,"time":"2025-11-02T16:32:18.912Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-11-02T16:32:18.917Z","pid":25232,"hostname":"Gabriela","msg":"Removed page=22df1d31-8384-4f48-8114-aa6049ab12ff from context=508b793a-acba-44b4-9c7e-356730080b63 page stack"}
+{"level":30,"time":"2025-11-02T16:32:18.918Z","pid":25232,"hostname":"Gabriela","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-11-02T16:32:18.924Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:18.925Z","pid":25232,"hostname":"Gabriela","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-11-02T16:32:19.733Z","pid":25232,"hostname":"Gabriela","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-11-02T16:32:19.798Z","pid":25232,"hostname":"Gabriela","msg":"End of node method closeAllBrowsers"}

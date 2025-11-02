@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-11-02T13:32:12.174536" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework-Browser-BugBank-Study" source="C:\Users\gabri\RobotFramework-Browser-BugBank-Study">
+<suite id="s1-s1" name="BugBank" source="C:\Users\gabri\RobotFramework-Browser-BugBank-Study\BugBank">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\gabri\RobotFramework-Browser-BugBank-Study\BugBank\tests">
+<suite id="s1-s1-s1-s1" name="Operacao" source="C:\Users\gabri\RobotFramework-Browser-BugBank-Study\BugBank\tests\operacao">
+<suite id="s1-s1-s1-s1-s1" name="Inclusao" source="C:\Users\gabri\RobotFramework-Browser-BugBank-Study\BugBank\tests\operacao\inclusao.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Cenario 01: Fluxo Completo: Cadastro, Login e Tentativa de Transferencia Invalida" line="7">
+<kw name="Given Que Eu Abro A Pagina Inicial Do BugBank" owner="bugbank">
+<kw name="Abrir BugBank" owner="login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-11-02T13:32:12.717616" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\gabri\\RobotFramework-Browser-BugBank-Study\\results\\browser\\traces\\temp\\f9d18aad-cb9c-4eda-8759-e812edd092a6"}</msg>
+<msg time="2025-11-02T13:32:12.747610" level="INFO">Starting Browser process C:\Users\gabri\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:56763</msg>
+<msg time="2025-11-02T13:32:13.850707" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\gabri\\RobotFramework-Browser-BugBank-Study\\results\\browser\\traces\\temp\\f9d18aad-cb9c-4eda-8759-e812edd092a6"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-11-02T13:32:12.716609" elapsed="1.135090"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-11-02T13:32:14.995428" level="INFO">Successfully initialized new page object and opened url: https://bugbank.netlify.app/</msg>
+<msg time="2025-11-02T13:32:14.995428" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-11-02T13:32:13.851699" elapsed="1.144738"/>
+</kw>
+<doc>Abre o navegador e navega para a página inicial do BugBank.</doc>
+<status status="PASS" start="2025-11-02T13:32:12.715609" elapsed="2.280828"/>
+</kw>
+<doc>Condição inicial para o teste BDD, usando a keyword do resource file.</doc>
+<status status="PASS" start="2025-11-02T13:32:12.715609" elapsed="2.280828"/>
+</kw>
+<kw name="When Eu Preencho O Cadastro Com Dados Padrao" owner="bugbank">
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:14.997430" level="INFO">Clicks the element 'css=#__next &gt; div &gt; div.pages__FormBackground-sc-1ee1f2s-2.jNpkvU &gt; div &gt; div.card__login &gt; form &gt; div.login__buttons &gt; button.style__ContainerButton-sc-1wsixal-0.ihdmxA.button__child'.</msg>
+<arg>${BTN_REGISTRAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:14.997430" elapsed="0.067213"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:15.074639" level="INFO">Waited for Element with selector xpath=(//input[@placeholder='Informe seu e-mail'])[2] at state visible</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.064643" elapsed="0.009996"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2025-11-02T13:32:15.075640" level="INFO">${email_al} = mdecker@example.org</msg>
+<var>${email_al}</var>
+<status status="PASS" start="2025-11-02T13:32:15.074639" elapsed="0.001001"/>
+</kw>
+<kw name="Name" owner="FakerLibrary">
+<msg time="2025-11-02T13:32:15.077651" level="INFO">${nome_al} = Michaela Fowler</msg>
+<var>${nome_al}</var>
+<doc>:example: 'John Doe'</doc>
+<status status="PASS" start="2025-11-02T13:32:15.075640" elapsed="0.002011"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2025-11-02T13:32:15.078648" level="INFO">${senha_al} = !A5cVJ$b1T</msg>
+<var>${senha_al}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.077651" elapsed="0.000997"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-11-02T13:32:15.079645" level="INFO">${EMAIL_CRIADO} = mdecker@example.org</msg>
+<arg>${EMAIL_CRIADO}</arg>
+<arg>${email_al}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.078648" elapsed="0.000997"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-11-02T13:32:15.080645" level="INFO">${SENHA_CRIADA} = !A5cVJ$b1T</msg>
+<arg>${SENHA_CRIADA}</arg>
+<arg>${senha_al}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.079645" elapsed="0.001000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:15.081646" level="INFO">Fills the text 'mdecker@example.org' in the given field.</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>${EMAIL_CRIADO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.080645" elapsed="0.014530"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:15.096176" level="INFO">Fills the text 'Michaela Fowler' in the given field.</msg>
+<arg>${INPUT_NOME}</arg>
+<arg>${nome_al}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.095175" elapsed="0.012090"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:15.108259" level="INFO">Fills the text '!A5cVJ$b1T' in the given field.</msg>
+<arg>${INPUT_SENHA}</arg>
+<arg>${SENHA_CRIADA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.108259" elapsed="0.007991"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:15.117252" level="INFO">Fills the text '!A5cVJ$b1T' in the given field.</msg>
+<arg>${INPUT_CONF_SENHA}</arg>
+<arg>${SENHA_CRIADA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.116250" elapsed="0.009001"/>
+</kw>
+<if>
+<branch type="IF" condition="'${SALDO_INICIAL_TOGGLE}' == 'True'">
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:15.127252" level="INFO">Clicks the element 'id=toggleAddBalance'.</msg>
+<arg>${TOGGLE_SALDO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:15.126252" elapsed="1.450312"/>
+</kw>
+<status status="PASS" start="2025-11-02T13:32:15.126252" elapsed="1.450312"/>
+</branch>
+<status status="PASS" start="2025-11-02T13:32:15.126252" elapsed="1.450312"/>
+</if>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:16.576564" level="INFO">Clicks the element 'xpath=(//button[normalize-space()='Cadastrar'])[1]'.</msg>
+<arg>${BTN_CADASTRAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.576564" elapsed="0.052548"/>
+</kw>
+<doc>Clica em Registrar e preenche o formulário usando as variáveis definidas.</doc>
+<status status="PASS" start="2025-11-02T13:32:14.996437" elapsed="1.633672"/>
+</kw>
+<kw name="Then Devo Receber Uma Mensagem De Sucesso" owner="bugbank">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:16.638106" level="INFO">Waited for Element with selector id=modalText at state visible</msg>
+<arg>${MSG_CADASTRO_SUCESSO}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.631109" elapsed="0.006997"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-11-02T13:32:16.662103" level="INFO">Text: 'A conta 561-7 foi criada com sucesso'</msg>
+<msg time="2025-11-02T13:32:16.662103" level="INFO">${success_message} = A conta 561-7 foi criada com sucesso</msg>
+<var>${success_message}</var>
+<arg>${MSG_CADASTRO_SUCESSO}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.639103" elapsed="0.024002"/>
+</kw>
+<kw name="Should Match Regexp" owner="BuiltIn">
+<arg>${success_message}</arg>
+<arg>^A conta [0-9]{3}-[0-9] foi criada com sucesso$</arg>
+<doc>Fails if ``string`` does not match ``pattern`` as a regular expression.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.663105" elapsed="0.000000"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2025-11-02T13:32:16.664104" level="INFO">${account_number} = ['561-7']</msg>
+<var>${account_number}</var>
+<arg>${success_message}</arg>
+<arg>([0-9]{3}-[0-9])</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.663105" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-02T13:32:16.664104" level="INFO">Conta criada: 561-7</msg>
+<arg>Conta criada: ${account_number[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.664104" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:16.665104" level="INFO">Clicks the element 'xpath=//a[text()='Fechar']'.</msg>
+<arg>${BTN_FECHAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.665104" elapsed="0.930933"/>
+</kw>
+<doc>Verifica a mensagem de sucesso dinâmica e fecha o modal.</doc>
+<status status="PASS" start="2025-11-02T13:32:16.630109" elapsed="0.967137"/>
+</kw>
+<kw name="When Eu TENTO Logar Com A Conta Recem Criada" owner="bugbank">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.598246" level="INFO">Fills the text 'mdecker@example.org' in the given field.</msg>
+<arg>${INPUT_LOGIN_EMAIL}</arg>
+<arg>${EMAIL_CRIADO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.598246" elapsed="0.008001"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:17.612248" level="INFO">Waited for Element with selector css=form[class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr'] input[name='password'] at state visible</msg>
+<arg>${INPUT_LOGIN_SENHA}</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.607247" elapsed="0.005001"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.613248" level="INFO">Fills the text '!A5cVJ$b1T' in the given field.</msg>
+<arg>${INPUT_LOGIN_SENHA}</arg>
+<arg>${SENHA_CRIADA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.612248" elapsed="0.009287"/>
+</kw>
+<doc>Preenche os campos de email e senha usando as variáveis promovidas.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.597246" elapsed="0.024289"/>
+</kw>
+<kw name="And Eu Clico Em Acessar" owner="bugbank">
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:17.623543" level="INFO">Clicks the element 'css=button[class='style__ContainerButton-sc-1wsixal-0 otUnI button__child']'.</msg>
+<arg>${BTN_ACESSAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.622540" elapsed="0.047004"/>
+</kw>
+<doc>Clica no botão de acesso para submeter as credenciais.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.622540" elapsed="0.047004"/>
+</kw>
+<kw name="Then Devo Ser Redirecionado Para A Pagina Inicial" owner="bugbank">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:17.774021" level="INFO">Waited for Element with selector id=btn-TRANSFERÊNCIA at state visible</msg>
+<arg>${ELEMENTO_TRANSFERENCIA}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.670543" elapsed="0.103478"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-11-02T13:32:17.778022" level="INFO">${current_url} = https://bugbank.netlify.app/home</msg>
+<var>${current_url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.774021" elapsed="0.004001"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>/home</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.778022" elapsed="0.000998"/>
+</kw>
+<doc>Verifica se a URL mudou para a página de saldo.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.670543" elapsed="0.108477"/>
+</kw>
+<kw name="When Eu TENTO Fazer Uma Transferencia Invalida" owner="bugbank">
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:17.780021" level="INFO">Clicks the element 'id=btn-TRANSFERÊNCIA'.</msg>
+<arg>${ELEMENTO_TRANSFERENCIA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.779020" elapsed="0.043304"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:17.905205" level="INFO">Waited for Element with selector css=input[name='accountNumber'] at state visible</msg>
+<arg>${INPUT_NUMERO_CONTA}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.822324" elapsed="0.082881"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.906206" level="INFO">Fills the text '9999' in the given field.</msg>
+<arg>${INPUT_NUMERO_CONTA}</arg>
+<arg>9999</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.906206" elapsed="0.008002"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.915229" level="INFO">Fills the text '0' in the given field.</msg>
+<arg>${INPUT_DIGITO}</arg>
+<arg>0</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.914208" elapsed="0.009000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.924221" level="INFO">Fills the text '23' in the given field.</msg>
+<arg>${INPUT_VALOR_TRANSF}</arg>
+<arg>23</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.923208" elapsed="0.008000"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.932207" level="INFO">Fills the text ''Teste de Erro'' in the given field.</msg>
+<arg>${INPUT_DESCRICAO}</arg>
+<arg>'Teste de Erro'</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.931208" elapsed="0.009000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:17.941210" level="INFO">Clicks the element 'xpath=//button[@type='submit']'.</msg>
+<arg>${BTN_TRANSFERIR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.941210" elapsed="0.033716"/>
+</kw>
+<doc>Clica no botão de Transferência e preenche campos com dados inválidos.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.779020" elapsed="0.195906"/>
+</kw>
+<kw name="Then Devo Receber Uma Mensagem De Erro Conta inválida ou inexistente" owner="bugbank">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-11-02T13:32:17.979929" level="INFO">Waited for Element with selector id=modalText at state visible</msg>
+<arg>${MSG_CONTA_INVALIDA}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.975928" elapsed="0.004998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-11-02T13:32:17.991931" level="INFO">Text: 'Conta inválida ou inexistente'</msg>
+<msg time="2025-11-02T13:32:17.991931" level="INFO">${actual_message} = Conta inválida ou inexistente</msg>
+<var>${actual_message}</var>
+<arg>${MSG_CONTA_INVALIDA}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.980926" elapsed="0.011005"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_message}</arg>
+<arg>${MSG_ESPERADA}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.992931" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-11-02T13:32:17.993931" level="INFO">Clicks the element 'xpath=//a[text()='Fechar']'.</msg>
+<arg>${BTN_FECHAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.992931" elapsed="0.897010"/>
+</kw>
+<doc>Verifica a mensagem de erro esperada no modal de retorno.</doc>
+<status status="PASS" start="2025-11-02T13:32:17.975928" elapsed="0.914013"/>
+</kw>
+<tag>E2E</tag>
+<tag>Negativo</tag>
+<status status="PASS" start="2025-11-02T13:32:12.709607" elapsed="6.180334"/>
+</test>
+<status status="PASS" start="2025-11-02T13:32:12.218045" elapsed="6.702411"/>
+</suite>
+<status status="PASS" start="2025-11-02T13:32:12.211047" elapsed="6.715444"/>
+</suite>
+<status status="PASS" start="2025-11-02T13:32:12.208046" elapsed="6.722443"/>
+</suite>
+<status status="PASS" start="2025-11-02T13:32:12.204045" elapsed="6.730446"/>
+</suite>
+<status status="PASS" start="2025-11-02T13:32:12.178536" elapsed="6.760954"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">E2E</stat>
+<stat pass="1" fail="0" skip="0">Negativo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFramework-Browser-BugBank-Study">RobotFramework-Browser-BugBank-Study</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="BugBank">RobotFramework-Browser-BugBank-Study.BugBank</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">RobotFramework-Browser-BugBank-Study.BugBank.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Operacao">RobotFramework-Browser-BugBank-Study.BugBank.Tests.Operacao</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Inclusao">RobotFramework-Browser-BugBank-Study.BugBank.Tests.Operacao.Inclusao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

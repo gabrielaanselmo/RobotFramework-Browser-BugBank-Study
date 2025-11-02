@@ -22,7 +22,16 @@ ${INPUT_LOGIN_EMAIL}        ${FORM_LOGIN} input[placeholder='Informe seu e-mail'
 ${INPUT_LOGIN_SENHA}        ${FORM_LOGIN} input[name='password']
 ${BTN_ACESSAR}              css=button[class='style__ContainerButton-sc-1wsixal-0 otUnI button__child']
 ${BTN_FECHAR}               xpath=//a[text()='Fechar']
+
+# Selectors da Tela de Transferência
 ${ELEMENTO_TRANSFERENCIA}   id=btn-TRANSFERÊNCIA
+${INPUT_NUMERO_CONTA}       css=input[name='accountNumber']
+${INPUT_DIGITO}             css=input[name='digit']
+${INPUT_VALOR_TRANSF}       css=input[name='transferValue']
+${INPUT_DESCRICAO}          css=input[name='description']
+${BTN_TRANSFERIR}           xpath=//button[@type='submit']
+${MSG_CONTA_INVALIDA}       id=modalText
+${MSG_ESPERADA}             Conta inválida ou inexistente
 
 *** Keywords ***
 Given Que Eu Abro A Pagina Inicial Do BugBank
@@ -76,6 +85,21 @@ Then Devo Ser Redirecionado Para A Pagina Inicial
     ${current_url}=  Get Url
     Should Contain     ${current_url}     /home
 
-And Eu Finalizo A Sessao
-    [Documentation]    Encerra a sessão do navegador.
-    Fechar Browser
+When Eu TENTO Fazer Uma Transferencia Invalida
+    [Documentation]  Clica no botão de Transferência e preenche campos com dados inválidos.
+    Click     ${ELEMENTO_TRANSFERENCIA}
+
+    Wait For Elements State    ${INPUT_NUMERO_CONTA}    visible     timeout=5s
+    Fill Text     ${INPUT_NUMERO_CONTA}    9999
+    Fill Text     ${INPUT_DIGITO}          0
+    Fill Text     ${INPUT_VALOR_TRANSF}    23
+    Fill Text     ${INPUT_DESCRICAO}       'Teste de Erro'
+    
+    Click         ${BTN_TRANSFERIR}
+
+Then Devo Receber Uma Mensagem De Erro Conta inválida ou inexistente
+    [Documentation]    Verifica a mensagem de erro esperada no modal de retorno.
+    Wait For Elements State     ${MSG_CONTA_INVALIDA}    visible
+    ${actual_message}=    Get Text    ${MSG_CONTA_INVALIDA}
+    Should Be Equal      ${actual_message}  ${MSG_ESPERADA} 
+    Click     ${BTN_FECHAR}
