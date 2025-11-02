@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Testes para o fluxo de cadastro de novos usuários no BugBank
+Documentation    Testes para os fluxos no BugBank
 Resource         ../../../../../../shared/login.robot
 Library          String
 Library          FakerLibrary
@@ -21,7 +21,7 @@ ${FORM_LOGIN}               css=form[class='style__ContainerFormLogin-sc-1wbjw6k
 ${INPUT_LOGIN_EMAIL}        ${FORM_LOGIN} input[placeholder='Informe seu e-mail']
 ${INPUT_LOGIN_SENHA}        ${FORM_LOGIN} input[name='password']
 ${BTN_ACESSAR}              css=button[class='style__ContainerButton-sc-1wsixal-0 otUnI button__child']
-${BTN_FECHAR}               xpath=//a[text()='Fechar']
+${BTN_FECHAR}               css=#btnCloseModal
 
 # Selectors da Tela de Transferência
 ${ELEMENTO_TRANSFERENCIA}   id=btn-TRANSFERÊNCIA
@@ -32,6 +32,12 @@ ${INPUT_DESCRICAO}          css=input[name='description']
 ${BTN_TRANSFERIR}           xpath=//button[@type='submit']
 ${MSG_CONTA_INVALIDA}       id=modalText
 ${MSG_ESPERADA}             Conta inválida ou inexistente
+${BTN_VOLTAR}               css=#btnBack
+
+# Selectors da Tela Extrato
+${BTN_EXTRATO}             id=btn-EXTRATO
+${TEXT_SALDO_DISPONIVEL}   id=textBalanceAvailable
+${SALDO_ESPERADO}          R$ 1.000,00
 
 *** Keywords ***
 Given Que Eu Abro A Pagina Inicial Do BugBank
@@ -103,3 +109,16 @@ Then Devo Receber Uma Mensagem De Erro Conta inválida ou inexistente
     ${actual_message}=    Get Text    ${MSG_CONTA_INVALIDA}
     Should Be Equal      ${actual_message}  ${MSG_ESPERADA} 
     Click     ${BTN_FECHAR}
+
+Then Eu Verifico O Saldo Disponivel
+    [Documentation]    Clica no Extrato e verifica o saldo.
+    Click     ${BTN_VOLTAR} 
+    Click     ${BTN_EXTRATO}
+
+    Wait For Elements State    ${TEXT_SALDO_DISPONIVEL}    visible
+
+    ${saldo_com_nbsp}=    Get Text    ${TEXT_SALDO_DISPONIVEL}
+    ${saldo_normalizado}=    String.Replace String    ${saldo_com_nbsp}    R$\xa0    R$ 
+    ${saldo_formatado}=    String.Replace String    ${saldo_com_nbsp}    \xa0    ${SPACE}
+    Should Be Equal    ${saldo_formatado}    ${SALDO_ESPERADO}
+    Log     O saldo disponível verificado é: ${saldo_formatado}

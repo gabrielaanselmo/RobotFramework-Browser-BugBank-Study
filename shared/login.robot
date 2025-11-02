@@ -8,7 +8,7 @@ ${BROWSER}     chromium
 *** Keywords ***
 Abrir BugBank
     [Documentation]    Abre o navegador e navega para a página inicial do BugBank.
-    New Browser    browser=${BROWSER}    headless=True     
+    New Browser    browser=${BROWSER}    headless=False     
     New Page       url=${BASE_URL}
     
 Fechar Browser

@@ -4,8 +4,8 @@ Resource   ../../../shared/login.robot
 Resource   ../operacao/resources/pages/inclusao/bugbank.robot
 
 *** Test Cases ***
-Cenario 01: Fluxo Completo: Cadastro, Login e Tentativa de Transferencia Invalida
-    [Tags]   E2E     Negativo
+Cenario 01: Fluxo Completo: Cadastro, Login, Tentativa de Transferencia Invalida e Extrato.
+    [Tags]   E2E     
 
     Given Que Eu Abro A Pagina Inicial Do BugBank
     When Eu Preencho O Cadastro Com Dados Padrao
@@ -19,3 +19,6 @@ Cenario 01: Fluxo Completo: Cadastro, Login e Tentativa de Transferencia Invalid
     # --- FLUXO DE TRANSFERÊNCIA ---
     When Eu TENTO Fazer Uma Transferencia Invalida
     Then Devo Receber Uma Mensagem De Erro Conta inválida ou inexistente
+
+    # --- FLUXO DE VERIFICAÇÃO DE EXTRATO ---
+    Then Eu Verifico O Saldo Disponivel
